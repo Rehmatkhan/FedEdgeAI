@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop Paper Submission</title>
+    <title>ICDCS 2025 International Workshop on EdgeAI</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -16,7 +16,7 @@
             overflow-x: hidden;
         }
 
-        /* Header Styles */
+    
         header {
             background: linear-gradient(135deg, hsl(269, 85%, 43%), #2575FC);
             color: #fff;
@@ -43,7 +43,7 @@
             animation: zoomIn 2s ease-in-out;
         }
 
-        /* Navigation Styles */
+       
         nav {
             background: #333;
             position: sticky;
@@ -67,7 +67,7 @@
             transform: scale(1.1);
         }
 
-        /* Section Styles */
+    
         .container {
             max-width: 1200px;
             margin: 40px auto;
@@ -94,7 +94,7 @@
             margin-left: 20px;
         }
 
-        /* Animations */
+    
         @keyframes slideInDown {
             0% {
                 transform: translateY(-100px);
@@ -134,7 +134,7 @@
             }
         }
 
-        /* Profile Cards */
+    
         .profile-card {
             display: flex;
             align-items: center;
@@ -168,7 +168,7 @@
             color: #555;
         }
 
-        /* Footer */
+    
         footer {
             background: #333;
             color: #fff;
@@ -189,7 +189,8 @@
 
     <header>
         <h1>1st Workshop on Federated Learning for Wireless Edge Artificial Intelligence (FedEdgeAI)</h1>
-        <p> In conjunction with the <a href="https://rehmatkhan.com/" style="color:whitesmoke; target="_blank">45th IEEE International Conference on Distributed Computing Systems (IEEE ICDCS 2025)</a></p>
+        <p> In conjunction with the <a href="https://icdcs2025.icdcs.org/" style="color:whitesmoke;" target="_blank">45th IEEE International Conference on Distributed Computing Systems (IEEE ICDCS 2025)</a> </p>
+            
         <p>20 July - 23 July, 2025, Glasgow, Scotland, UK</p>
     </header>
     <nav>
@@ -207,41 +208,40 @@
         <section id="about">
             <h2>About the Workshop</h2>
             <p>
-                Welcome to the 1st workshop on Federated Learning for Wireless Edge AI (FedEdgeAI). FedEdgeAI will be hosted in conjunction with the IEEE ICDCS 2025 conference, which will be held in Glasgow, Scotland, United Kingdom, from July 20th to July 23rd, 2025. 
-                We invite you to submit your work on any topic related to the Federated Learning, particulary workshop is specifically centred on wireless Federated Learning (FL), focusing on how to overcome challenges of FL in real-world settings, how to deploy large language models (LLMs) on resource-constrained edge devices, and rethinking various communications protocols for wireless FL, as well as semantic communications.  </p>
-        </section>
+                Welcome to the 1st workshop on federated learning for Wireless Edge AI (FedEdgeAI). <strong>FedEdgeAI</strong> will be hosted in conjunction with the <a href="https://icdcs2025.icdcs.org/" target="_blank">IEEE ICDCS 2025</a>
+                conference, which will be held in Glasgow, Scotland, United Kingdom, from July 20th to July 23rd, 2025. 
+                <p>We invite you to submit your original work on topics related to federated learning, focusing on real-world challenges when federated learning is deployed in practical scenarios. This includes algorithms for distributed machine learning, adaptive techniques for changing network conditions, edge AI resilience, benchmarking generative models at the edge, downsizeing Large Language Models (LLMs) into Small Language Models (SLMs)
+                    for improved computation and communication efficiency, semantic communication, asynchronous federated learning training, and rethinking communication protocols for wireless federated learning.</p>
+            </section>
         <section id="topics">
-            <h2>Conference Topics</h2>
+            <h2>Call for Papers</h2>
+           
             <p>
-                Standard ML techniques require centralizing the training data on cloud data centers due to the high computing resources (e.g., GPUs) available on the cloud, so that large amounts of data can be analyzed to obtain useful information for the detection, classification, and prediction of future events with high accuracy. However, the proliferation of mobile devices, ranging from smartphones to autonomous vehicles, drones, and various Internet-of-things (IoT) devices such as wearable sensors and surveillance cameras, has resulted in a vast amount of data being generated. Data from all of these devices is collected in a distributed manner and sent to a central server, where it is used to train a powerful ML model. Due to network bandwidth, latency and data privacy concerns, sending all of the data to a remote cloud is impractical and often unnecessary. Furthermore, in many applications, user data contains sensitive personal information, raising privacy concerns as another reason to avoid offloading data to a centralized server.
-            </p>
+                Edge AI emerged as an evolution of the edge computing paradigm, deploying AI algorithms and models directly on edge devices. Within this context, the concept of federated learning provides privacy by design in an machine learning technique, enabling collaborative learning across multiple distributed devices without sending raw data to a central server while processing data locally on devices. However, given the limited availability of resources on many devices, performing federated learning on such devices is impractical due to increased training times. Moreover, for training machine learning models that may be a Deep Neural Network (DNN), massive amounts of parameter updates need to be synchronized across distributed devices, creating potential congestion and eventually slowdowns the entire training process. </p>
+                
+                <p>    Specifically, the end devices used in federated learning are predominantly wireless and typically operate with limited bandwidth, such as 2G, 3G, or Wi-Fi. The global and local model parameters use uplink and downlink transmission, which depend on bandwidth resource block allocation, fading, and interference from others. Exchanging model parameters over such lossy networks may result in challenges such as transmission delay, which impacts the convergence time of the model, and packet losses, which affect the model’s accuracy.</p>
             <p>
-                Edge artificial intelligence (Edge AI) emerged as an evolution of the edge computing paradigm, deploying AI algorithms and models directly on edge devices. Within this context, the concept of federated learning (FL) provides privacy by design in an ML technique, enabling collaborative learning across multiple distributed devices without sending raw data to a central server while processing data locally on devices. However, given the limited availability of resources on many devices, performing FL on such devices is impractical due to increased training times. Moreover, for training ML models that may be a Deep Neural Network (DNN), massive amounts of parameter updates need to be synchronized across distributed devices, creating potential congestion and eventually slowdowns on the entire training process. During ML training, the model generates bursty traffic, which increases communication time and may result in increased completion time, training loss, energy consumption, and reliability.
-            </p>
-            <p>
-                In this workshop, we call upon this community for original, previously unpublished papers empirically addressing key issues and challenges in wireless FL arising from stringent network requirements. We invite submissions on a wide range of topics including, but not limited to:
+                We invite submissions on a wide range of topics including, but not limited to:
             </p>
             <ul>
-                <li>Novel algorithms and architectures for the intersection of distributed ML and the cloud-edge-device continuum in wireless FL</li>
-                <li>Adaptive techniques for real-world constraints such as latency due to changing network conditions (e.g., 2G, 3G, 4G, Wi-Fi, etc.)</li>
-                <li>Edge Generative AI: techniques for downsizing LLMs to SLMs for edge deployment</li>
-                <li>Real-world applications of generative AI on edge devices</li>
-                <li>Benchmarking frameworks for evaluating generative AI models at the edge</li>
-                <li>Semantic communications for wireless FL</li>
-                <li>Novel application layer and transport layer protocols at the wireless edge</li>
-                <li>Fair client selection mechanisms in wireless FL</li>
-                <li>Effective mobility management and migration mechanisms in wireless FL</li>
-                <li>Neural network optimization techniques in mobile scenarios</li>
-                <li>Privacy and security challenges in wireless FL</li>
-                <li>Communication-efficient techniques for asynchronous FL training</li>
-                <li>Real testbeds and empirical evaluations</li>
+                <li>Novel algorithms and architectures for the intersection of distributed machine learning and the cloud-edge-device continuum.</li>
+                <li>Adaptive techniques for real-world constraints in federated learning deployments.</li>
+                <li>Techniques for downsizing LLMs to SLMs for edge deployment (Edge Generative AI).</li>
+                <li>Real-world applications of generative AI at the  wireless edge.</li>
+                <li>Benchmarking frameworks for evaluating generative AI models at the wireless edge.</li>
+                <li>Semantic communications for wireless federated learning.</li>
+                <li>Novel application layer and transport layer protocols at the wireless edge.</li>                <li>Effective mobility management and migration mechanisms in wireless federated learning.</li>
+                <li>Neural network optimization techniques in mobile scenarios.</li>
+                <li>Privacy and security challenges in wireless federated learning.</li>
+                <li>Communication-efficient techniques for asynchronous wireless federated learning training.</li>
+                <li>Real testbeds and empirical evaluations.</li>
             </ul>
         </section>
        
         <section id="important-dates">
             <h2>Important Dates</h2>
             <ul>
-                <li>Paper Submission Deadline: <strong> March 16th, 2025 </strong></li>
+                <li>Paper Submission Deadline: <strong> March 15th, 2025 </strong></li>
                 <li>Notification of Acceptance:<strong> April 2nd, 2025</strong></li>
                 <li>Camera-Ready Submission:<strong> April 16th, 2025</strong> </li>
                 <li>Conference Dates:<strong> July 20th, 2025</strong></li>
@@ -256,8 +256,6 @@
             <p> Authors are invited to submit original and unpublished work, which must not be submitted concurrently for publication elsewhere, in the following format:</p>
             <ul>
 
-
-                
 
                 <!DOCTYPE html>
 <html lang="en">
@@ -310,7 +308,7 @@
             conference in person to present their work on-site. 
         </p>
         <p>
-          Please refer  <a href="https://icdcs2025.icdcs.org/call-for-papers/#:~:text=Emergent%20Applications%20%26%20Infrastructures-,Paper%20Submission%E2%80%AF%C2%A0,-The%C2%A0Paper" target="_blank">ICDCS's paper submission guidlines</a>.
+          Please refer to <a href="https://icdcs2025.icdcs.org/call-for-papers/#:~:text=Emergent%20Applications%20%26%20Infrastructures-,Paper%20Submission%E2%80%AF%C2%A0,-The%C2%A0Paper" target="_blank"> ICDCS's paper submission guidlines</a>.
         </p>
         <p>
             <strong>Submission Portal:</strong> Submit papers via 
@@ -359,7 +357,7 @@
                 <img src="https://www.qmul.ac.uk/eecs/media/eecs/staff-profile-images/ahmed.jpg" alt="Dr. John Doe">
                 <div>
                     <h3><a href="https://www.qmul.ac.uk/eecs/people/profiles/sayedahmed.html" target="_blank"> Dr. Ahmed M. A. Sayed</a></h3>
-                    <p>Senior Lecturer (Associate Professor) at Queen Mary University of London, UK.</p>
+                    <p>Senior Lecturer (Associate Professor) and Head of <a href="https://sayed-sys-lab.github.io/" target="_blank">SAYED Systems Group</a> at Queen Mary University of London, UK.</p>
                 </div>
             </div>
         </section>
@@ -367,8 +365,8 @@
         <div class="profile-card">
             <img src="https://li.qilei.me/images/qilei.jpg" alt="Publicity Chair 1">
             <div>
-                <h3>Dr. Kevin Li </h3>
-                <p>Post-doc researcher, Queen Mary University of London, UK</p>
+                <h3><a href="https://li.qilei.me/" target="_blank"> Dr. Kevin Li </a></a> </h3>
+                <p>Post-doc researcher, Queen Mary University of London, UK.</p>
             </div>
         </div>
        
@@ -376,20 +374,18 @@
             <section id="pcm">
                 <h2>Program Committee Members</h2>
                 <ul>
-                    <li>Ali Raza, Honda Research Institute Europe, Germany</li>
-                    <li>Boubakr Nour, Ericsson Research, Ericsson, Canada</li>
-                    <li>Muhammad Salahuddin, EURECOM, France</li>
-                    <li>Di Wu, University of St Andrews, UK</li>
-                    <li>Shabir Ahmad, Gachon University, South Korea</li>
-                    <li>Muhammad Habib ur Rehman, University of Bedfordshire, UK</li>
-                    <li>Balázs Sonkoly, Budapest University of Technology and Economics, Budapest, Hungary</li>
-                    <li>Sidi Lu, William & Mary, USA</li>
-                    <li>Mahdi Boloursaz Mashhadi, University of Surrey, UK</li>
-                    <li>Kim Phuc TRAN, University of Lille, France</li>
-                    <li>James Pope, University of Bristol, UK</li>
-                    <li>Saif ul Islam, University of Warwick, UK</li>
-                    <li>Wali Ullah Khan, University of Luxembourg, Luxembourg</li>
-                </ul>
+                    <li>Dr. Di Wu, University of St Andrews, UK.</li>
+                    <li>Dr. Sidi Lu, William & Mary University, Williamsburg, Virginia, USA.</li>
+                    <li>Dr. Mahdi Boloursaz Mashhadi, University of Surrey, UK.</li>
+                    <li>Dr. Ali Raza, Honda Research Institute Europe, Germany.</li>
+                    <li>Dr. Boubakr Nour, Ericsson Research, Canada.</li>
+                    <li> Dr. Husnain Sherazi, Newcastle University, UK. </li>   
+                    <li>Dr. Muhammad Salahuddin, EURECOM, France.</li>
+                    <li> Dr. Tomasz Szydlo, Newcastle University, UK. </li>      
+                    <li> Dr. Dev Jha, Newcastle University, UK. </li>  
+                    <li>Dr. Muhammad Habib ur Rehman, University of Bedfordshire, UK.</li>
+                    <li>Dr. Saif ul Islam, University of Warwick, UK.</li>    
+                    <li> Dr. Kim Phuc Tran, University of Lille, France. </li> 
                 
            
            
@@ -409,13 +405,13 @@
                 <img src="https://www.gla.ac.uk/media/Media_892557_smxx.jpg" alt="Speaker 2">
                 <div>
                     <h3><a href="https://www.gla.ac.uk/schools/computing/staff/paulharvey/" target="_blank"> Dr. Paul Harvey</h3></a>
-                    <p>Lecturer (Assistant Professor) in Autonomous Systems at the School of Computing Science, University of Glasgow, UK.</p>
+                    <p>Lecturer (Assistant Professor) in Autonomous Systems at School of Computing Science at University of Glasgow, UK.</p>
                 </div>
             </div>
        
         <section id="contact">
             <h2>Contact:</h2>
-            <p>Email: <a href="mailto:rehmat.ullah@newcastle.ac.uk">rehmat.ullah@newcastle.ac.uk</a></p>
+            <p><strong>Dr. Rehmat Ullah</strong> at <a href="mailto:rehmat.ullah@newcastle.ac.uk"> rehmat.ullah@newcastle.ac.uk</a></p>
            
         </section>
     </div>
