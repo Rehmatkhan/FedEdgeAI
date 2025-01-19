@@ -192,6 +192,8 @@
         <p> In conjunction with the <a href="https://icdcs2025.icdcs.org/" style="color:whitesmoke;" target="_blank">45th IEEE International Conference on Distributed Computing Systems (IEEE ICDCS 2025)</a> </p>
         <br>
         <p>20 July - 23 July, 2025, Glasgow, Scotland, UK</p>
+
+
     </header>
     <nav>
         <a href="#about">About</a>
@@ -236,20 +238,47 @@
                 <li>Communication-efficient techniques for asynchronous wireless federated learning training.</li>
                 <li>Real testbeds and empirical evaluations.</li>
             </ul>
-        </section>
-       
-        <section id="important-dates">
-            <h2>Important Dates</h2>
-            <ul>
-                <li>Paper Submission Deadline: <strong> March 15th, 2025 </strong></li>
-                <li>Notification of Acceptance:<strong> April 2nd, 2025</strong></li>
-                <li>Camera-Ready Submission:<strong> April 16th, 2025</strong> </li>
-                <li>Conference Dates:<strong> July 20th, 2025</strong></li>
-               <p>*All deadlines are <a href="https://www.timeanddate.com/time/zones/aoe" target="_blank"> <strong>Anywhere on Earth (AoE)</strong> </a>.</p> 
-
-
-            </ul>
-        </section>
+            <section id="important-dates">
+                <h2>Important Dates</h2>
+                <ul>
+                    <li>
+                        Paper Submission Deadline: <strong ">March 15th, 2025.</strong> 
+                        <span id="countdown" style="color: #ff3358; font-weight: bold;"></span>
+                    </li>
+                    <li>Notification of Acceptance: <strong> April 2nd, 2025</strong></li>
+                    <li>Camera-Ready Submission: <strong> April 16th, 2025</strong> </li>
+                    <li>Conference Dates: <strong> July 20th, 2025</strong></li>
+                    <p>*All deadlines are <a href="https://www.timeanddate.com/time/zones/aoe" target="_blank"> <strong>Anywhere on Earth (AoE)</strong> </a>.</p>
+                </ul>
+            </section>
+            
+            <script>
+                // Set the deadline date
+                const deadline = new Date('March 15, 2025 23:59:59').getTime();
+            
+                // Update the countdown every 1 second
+                const x = setInterval(function() {
+                    const now = new Date().getTime();
+                    const distance = deadline - now;
+            
+                    // Calculating days, hours, minutes, and seconds
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+                    document.getElementById('countdown').innerHTML = `You have: <span style="color:; font-weight: bold;">${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds left untill the deadline.</span>`;
+            
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById('countdown').innerHTML = "<span style='color: #ff3358; font-weight: bold;'>Deadline Passed</span>";
+                    }
+                }, 1000);
+            </script>
+            
+            
+            
+        
       
         <section id="submission">
             <h2>Submission Guidelines</h2>
@@ -411,12 +440,13 @@
        
         <section id="contact">
             <h2>Contact:</h2>
-            <p><strong>Dr. Rehmat Ullah</strong> at <a href="mailto:rehmat.ullah@newcastle.ac.uk"> rehmat.ullah@newcastle.ac.uk</a></p>
+            <p><strong>Dr. Rehmat Ullah</strong> </p>
+                <p> <strong>Email: </strong><a href="mailto:rehmat.ullah@newcastle.ac.uk"> rehmat.ullah@newcastle.ac.uk</a></p>
            
         </section>
     </div>
     <footer>
-        <p>&copy; 2025 <a href="https://rehmatkhan.github.io/FedEdgeAI/" style="color: white;">FedEdgeAI</a>. All rights reserved. | Designed by Rehmat Ullah</p>
+        <p>&copy; 2025 <a href="https://rehmatkhan.github.io/FedEdgeAI/" style="color: white;">FedEdgeAI</a>. All rights reserved. | Designed & Managed by <a href="https://www.rehmatkhan.com/"target="_blank" style="color: white;"><strong>Rehmat Ullah</strong> </a></p>
 
     </footer>
 </body>
