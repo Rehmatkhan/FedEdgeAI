@@ -242,7 +242,7 @@
                 <h2>Important Dates</h2>
                 <ul>
                     <li>
-                        Paper Submission Deadline: <strong ">March 15th, 2025.</strong> 
+                        Paper Submission Deadline: <strong ">March 7th, 2025.</strong> 
                         <span id="countdown" style="color: #ff3358; font-weight: bold;"></span>
                     </li>
                     <li>Notification of Acceptance: <strong> April 2nd, 2025</strong></li>
@@ -253,15 +253,12 @@
             </section>
             
             <script>
-                // Set the deadline date
-                const deadline = new Date('March 15, 2025 23:59:59').getTime();
+                const deadline = new Date('March 7, 2025 23:59:59').getTime();
             
-                // Update the countdown every 1 second
                 const x = setInterval(function() {
                     const now = new Date().getTime();
                     const distance = deadline - now;
             
-                    // Calculating days, hours, minutes, and seconds
                     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -271,7 +268,7 @@
             
                     if (distance < 0) {
                         clearInterval(x);
-                        document.getElementById('countdown').innerHTML = "<span style='color: #ff3358; font-weight: bold;'>Deadline Passed</span>";
+                        document.getElementById('countdown').innerHTML = "<span style='color: #ff3358; font-weight: bold;'>Closed for submission</span>";
                     }
                 }, 1000);
             </script>
@@ -411,6 +408,7 @@
                     <li> Dr. Husnain Sherazi, Newcastle University, UK. </li>   
                     <li>Dr. Muhammad Salahuddin, EURECOM, France.</li>
                     <li> Dr. Tomasz Szydlo, Newcastle University, UK. </li>      
+                    <li> Dr. Dinh-Hieu Tran, University of Luxembourg, Luxembourg.</li>  
                     <li> Dr. Dev Jha, Newcastle University, UK. </li>  
                     <li>Dr. Muhammad Habib ur Rehman, University of Bedfordshire, UK.</li>
                     <li>Dr. Saif ul Islam, University of Warwick, UK.</li>    
@@ -424,7 +422,7 @@
             <div class="profile-card">
                 <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfM-79-Uq2I4naak6QidXysTxkQolckApn-VYA2tDffPeenvT9h8Ml7ndyz-qrzoovU-LcSnfYKPUDIA3FvRWd3WMaoUCHFtXNbQFydilCBGMoAJmvhCjIFW7G8sCzDYTfVjT3rTQ?key=thbNXAIanuz1WS6N17BSncSK" alt="Speaker 1">
                 <div>
-                    <h3><a href="https://www.ncl.ac.uk/computing/staff/profile/rajranjan.html" target="_blank">Prof Raj Ranjan</h3> </a>
+                    <h3><a href="https://www.ncl.ac.uk/computing/staff/profile/rajranjan.html" target="_blank">Prof Raj Ranjan</h3> </a> (To be confirmed)
                     <p>Professor in  Internet of Things and Director of <a href=" https://edgeaihub.co.uk/" target="_blank">National Edge AI Hub</a> at Newcastle University, UK.
                     </p>
                     <p></p>
